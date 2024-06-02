@@ -5,11 +5,7 @@ API для Yatube (cоциальная сеть). У неаутентифици�
 
 ## Технологический стек
 
-- **Python**
-- **Django**
-- **Django REST Framework (DRF)**
-- **SimpleJWT**
-- **Djoser**
+- **Python** - **Django** - **Django REST Framework (DRF)** - **SimpleJWT** - **Djoser**
 
 **Установка**
 
