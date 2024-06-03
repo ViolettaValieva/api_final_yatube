@@ -33,7 +33,7 @@ class Post(models.Model):
         return self.text
 
     class Meta:
-        ordering = ['pub_date']
+        ordering = ('pub_date', )
 
 
 class Comment(models.Model):
@@ -60,8 +60,8 @@ class Follow(models.Model):
             models.UniqueConstraint(fields=['user', 'following'],
                                     name='unique_following'),
             models.CheckConstraint(
-                name="%(app_label)s_%(class)s_prevent_self_follow",
-                check=~models.Q(user=models.F("following")),
+                name='%(app_label)s_%(class)s_prevent_self_follow',
+                check=~models.Q(user=models.F('following')),
             ),
 
         ]
