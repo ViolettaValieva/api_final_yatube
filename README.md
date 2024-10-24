@@ -92,4 +92,5 @@ GET /api/v1/follow/
 ```
 
 ### Автор
-ViolettaValieva
+
+[ViolettaValieva](https://github.com/ViolettaValieva)
